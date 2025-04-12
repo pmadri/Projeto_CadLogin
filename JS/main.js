@@ -31,7 +31,7 @@ function salvarUser(){
 function criaLista(){
     let tabela =  "<tr><th>Nome</th><th>Ações</th></tr>";
     for(let i = 0; i <=(dadosLista.length - 1); i++){
-        tabela += "<tr><td>" +dadosLista[i] + "</td><td> </td></tr>"
+        tabela += "<tr><td>" +dadosLista[i] + "</td><td><button class='btn btn-sucess'>Editar</button><button class='btn btn-danger'>Excluir</button> </td></tr>"
         document.getElementById('tabela').innerHTML = tabela;
     }
 }
